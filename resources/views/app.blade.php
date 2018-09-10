@@ -61,6 +61,10 @@
         .m-b-md {
             margin-bottom: 30px;
         }
+
+        .navbar {
+            background:#2c2e30;
+        }
     </style>
 </head>
 <body>

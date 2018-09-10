@@ -23,7 +23,7 @@
     <nav class="navbar navbar-expand-md navbar-light navbar-laravel" style="height: 50px">
         <div class="container" style="font-size: 14px">
             <a class="navbar-brand" href="{{ url('/') }}" style="font-size: 20px">
-                <span class="glyphicon glyphicon-adjust" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-adjust" style="color:#636b6f" aria-hidden="true"></span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                 <span class="navbar-toggler-icon"></span>
@@ -40,10 +40,10 @@
                     <!-- Authentication Links -->
                     @guest
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            <a style="color:#636b6f" class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                            <a style="color:#636b6f" class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                         </li>
                     @else
                         <li class="nav-item dropdown">
