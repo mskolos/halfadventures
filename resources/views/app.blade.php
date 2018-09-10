@@ -1,5 +1,4 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
+@include('layouts.nav')
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -63,14 +62,11 @@
             margin-bottom: 30px;
         }
     </style>
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
 </head>
 <body>
-@include('layouts.nav')
 <div class="flex-center position-ref full-height">
-    <div class="content">
+    <div class="content container">
         @yield('content')
     </div>
 </div>
 </body>
-</html>
