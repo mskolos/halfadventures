@@ -14,7 +14,7 @@ class CreateRarityTable extends Migration
      */
     public function up()
     {
-        Schema::create('rarity', function (Blueprint $table) {
+        Schema::create('rarities', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
             $table->decimal('drop_rate');
@@ -35,6 +35,6 @@ class CreateRarityTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('rarity');
+        Schema::dropIfExists('rarities');
     }
 }
