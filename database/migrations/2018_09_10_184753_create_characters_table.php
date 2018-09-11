@@ -21,6 +21,8 @@ class CreateCharactersTable extends Migration
             $table->string('name');
             $table->text('physical_description')->nullable();
             $table->text('back_story')->nullable();
+            $table->unsignedInteger('race_id');
+            $table->unsignedInteger('character_class_id');
             $table->unsignedInteger('stat_id');
             $table->unsignedInteger('current_hit_points');
             $table->unsignedInteger('max_hit_points');
@@ -31,8 +33,8 @@ class CreateCharactersTable extends Migration
             $table->unsignedInteger('inventory_id'); //current/max carry weight on this, create pivot with items and equipped boolean
             $table->boolean('is_religious')->default(false);
             $table->string('deity')->nullable(); //create deity table
-            $table->unsignedInteger('lawful_ratio')->default(0.5); //0 = true Chaotic, 1 = true Lawful
-            $table->unsignedInteger('alignment_ratio')->default(0.5); //0 = true Evil, 1 = true Good
+            $table->decimal('lawful_ratio')->default(0.5); //0 = true Chaotic, 1 = true Lawful
+            $table->decimal('alignment_ratio')->default(0.5); //0 = true Evil, 1 = true Good
             $table->boolean('is_shifted')->default(false);
             $table->unsignedInteger('shift_id')->nullable();
             $table->unsignedInteger('debuff_id')->nullable();

@@ -27,6 +27,7 @@ class CreateDebuffsTable extends Migration
         Debuff::create(['title' => 'Poisoned']);
         Debuff::create(['title' => 'Laughing']);
         Debuff::create(['title' => 'Sleeping']);
+        Debuff::create(['title' => 'Charmed']);
     }
 
     /**
